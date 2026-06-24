@@ -7,9 +7,9 @@
     "build-exe": "pkg main.js --targets node18-win-x64 --output 静态资源服务.exe",
     "client:dev": "electron .",
     "build-client": "npm run build-client:win-x64",
-    "build-client:win-x64": "electron-builder --win portable --x64",
-    "build-client:linux-x64": "electron-builder --linux AppImage --x64",
-    "build-client:linux-arm64": "electron-builder --linux AppImage --arm64"
+    "build-client:win-x64": "electron-builder --win portable --x64 --publish never",
+    "build-client:linux-x64": "electron-builder --linux AppImage --x64 --publish never",
+    "build-client:linux-arm64": "electron-builder --linux AppImage --arm64 --publish never"
   },
   "dependencies": {
     "express": "^4.19.2"
