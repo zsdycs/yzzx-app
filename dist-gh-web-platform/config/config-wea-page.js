@@ -1,0 +1,203 @@
+const __WeaConfig__ = {
+  weaList: [
+    {
+      name: '10m',
+      weaReals: [],
+      weaAttrs: [
+        // 大亚湾
+        {
+          attrName: '平均风速',
+          attrUaTag: 'KRS/0110WSA',
+          attrDisp: 'windSpeed',
+          unit: 'm/s',
+          column: '大亚湾',
+          isLabel: true,
+        },
+        {
+          attrName: '平均风向',
+          attrUaTag: 'KRS/0110WDA',
+          attrDisp: 'windAngle',
+          unit: '°',
+          column: '大亚湾',
+        },
+        {
+          attrName: '风向标准差',
+          attrUaTag: 'KRS/0110WDD',
+          attrDisp: 'windAngleDiff',
+          unit: '°',
+          column: '大亚湾',
+        },
+        {
+          attrName: '平均温度',
+          attrUaTag: 'KRS/0110TA',
+          attrDisp: 'temperature',
+          unit: '℃',
+          column: '大亚湾',
+        },
+        // 岭澳
+        {
+          attrName: '平均风速',
+          attrUaTag: 'KRS/0210WSA',
+          attrDisp: 'windSpeed',
+          unit: 'm/s',
+          column: '岭澳',
+          isLabel: true,
+        },
+        {
+          attrName: '平均风向',
+          attrUaTag: 'KRS/0210WDA',
+          attrDisp: 'windAngle',
+          unit: '°',
+          column: '岭澳',
+        },
+        {
+          attrName: '风向标准差',
+          attrUaTag: 'KRS/0210WDD',
+          attrDisp: 'windAngleDiff',
+          unit: '°',
+          column: '岭澳',
+        },
+        {
+          attrName: '平均温度',
+          attrUaTag: 'KRS/0210TA',
+          attrDisp: 'temperature',
+          unit: '℃',
+          column: '岭澳',
+        },
+      ],
+    },
+    {
+      name: '80m',
+      weaReals: [],
+      weaAttrs: [
+        // 大亚湾
+        {
+          attrName: '平均风速',
+          attrUaTag: 'KRS/0180WSA',
+          attrDisp: 'windSpeed',
+          unit: 'm/s',
+          column: '大亚湾',
+          isLabel: true,
+        },
+        {
+          attrName: '平均风向',
+          attrUaTag: 'KRS/0180WDA',
+          attrDisp: 'windAngle',
+          unit: '°',
+          column: '大亚湾',
+        },
+        {
+          attrName: '风向标准差',
+          attrUaTag: 'KRS/0180WDD',
+          attrDisp: 'windAngleDiff',
+          unit: '°',
+          column: '大亚湾',
+        },
+        {
+          attrName: '平均温度',
+          attrUaTag: 'KRS/0180TA',
+          attrDisp: 'temperature',
+          unit: '℃',
+          column: '大亚湾',
+        },
+        // 岭澳
+        // {
+        //   attrName: '风速',
+        //   attrUaTag: 'KRS/0280WSA',
+        //   attrDisp: 'windSpeed',
+        //   unit: 'm/s',
+        //   column: '岭澳',
+        //   isLabel: true,
+        // },
+        // {
+        //   attrName: '平均风向',
+        //   attrUaTag: 'KRS/0280WDA',
+        //   attrDisp: 'windAngle',
+        //   unit: '°',
+        //   column: '岭澳',
+        // },
+        // {
+        //   attrName: '风向标准差',
+        //   attrUaTag: 'KRS/0280WDD',
+        //   attrDisp: 'windAngleDiff',
+        //   unit: '°',
+        //   column: '岭澳',
+        // },
+        // {
+        //   attrName: '温度',
+        //   attrUaTag: 'KRS/0280TA',
+        //   attrDisp: 'temperature',
+        //   unit: '℃',
+        //   column: '岭澳',
+        // },
+      ],
+    },
+    {
+      name: '地面站',
+      weaReals: [],
+      weaAttrs: [
+        // 大亚湾
+        {
+          attrName: '累加降雨量',
+          attrUaTag: 'KRS/01RF',
+          attrDisp: 'rainfall',
+          unit: 'mm',
+          column: '大亚湾',
+          isLabel: true,
+        },
+        {
+          attrName: '平均气压',
+          attrUaTag: 'KRS/01PA',
+          attrDisp: 'pressure',
+          unit: 'hPa',
+          column: '大亚湾',
+        },
+        {
+          attrName: '平均湿度',
+          attrUaTag: 'KRS/011HA',
+          attrDisp: 'humidity',
+          unit: '%rh',
+          column: '大亚湾',
+        },
+        {
+          attrName: '平均温度',
+          attrUaTag: 'KRS/011TA',
+          attrDisp: 'temperature',
+          unit: '℃',
+          column: '大亚湾',
+        },
+        // 岭澳
+        {
+          attrName: '累加降雨量',
+          attrUaTag: 'KRS/02RF',
+          attrDisp: 'rainfall',
+          unit: 'mm',
+          column: '岭澳',
+          isLabel: true,
+        },
+        {
+          attrName: '平均气压',
+          attrUaTag: 'KRS/02PA',
+          attrDisp: 'pressure',
+          unit: 'hPa',
+          column: '岭澳',
+        },
+        {
+          attrName: '平均湿度',
+          attrUaTag: 'KRS/021HA',
+          attrDisp: 'humidity',
+          unit: '%rh',
+          column: '岭澳',
+        },
+        {
+          attrName: '平均温度',
+          attrUaTag: 'KRS/021TA',
+          attrDisp: 'temperature',
+          unit: '℃',
+          column: '岭澳',
+        },
+      ],
+    },
+  ],
+  stationTypes: ['大亚湾', '岭澳'],
+};

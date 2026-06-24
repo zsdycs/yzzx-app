@@ -1,0 +1,46 @@
+{
+  "name": "local-server-app",
+  "version": "1.0.0",
+  "main": "electron-main.js",
+  "bin": "main.js",
+  "scripts": {
+    "build-exe": "pkg main.js --targets node18-win-x64 --output 静态资源服务.exe",
+    "client:dev": "electron .",
+    "build-client": "npm run build-client:win-x64",
+    "build-client:win-x64": "electron-builder --win portable --x64",
+    "build-client:linux-x64": "electron-builder --linux AppImage --x64",
+    "build-client:linux-arm64": "electron-builder --linux AppImage --arm64"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "electron": "^31.0.2",
+    "electron-builder": "^24.13.3"
+  },
+  "pkg": {
+    "assets": [
+      "dist-gh-web-platform/**/*"
+    ],
+    "targets": [
+      "node18-win-x64"
+    ]
+  },
+  "build": {
+    "appId": "com.yzzx.client",
+    "productName": "CGN-研制中心项目-示例服务",
+    "asar": true,
+    "icon": "cng-logo1.ico",
+    "files": [
+      "dist-gh-web-platform/**/*",
+      "main.js",
+      "electron-main.js",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        "portable"
+      ]
+    }
+  }
+}
