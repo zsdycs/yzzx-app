@@ -1,0 +1,1 @@
+import{n as t}from"./index-45fef472.js";const _={components:{},data(){return{}},mounted(){},computed:{},methods:{}};var a=function(){var n=this,e=n._self._c;return e("div",{staticClass:"page"},[e("DialogCard",{attrs:{title:"整体应急流程",icon:"el-icon-s-claim"}},[e("div",[n._v("整体应急流程")])])],1)},s=[],o=t(_,a,s,!1,null,"686169ae",null,null);const i=o.exports;export{i as default};
