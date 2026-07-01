@@ -1,0 +1,1 @@
+import{n as _}from"./index-3e063931.js";const a={computed:{},props:{title:{type:String,default:""}},data(){return{}},mounted(){},methods:{}};var n=function(){var e=this,t=e._self._c;return t("div",{staticClass:"header"},[t("div",{staticClass:"title"},[e._v(e._s(e.title))]),e._t("default")],2)},s=[],r=_(a,n,s,!1,null,"34ba6986",null,null);const d=r.exports;export{d as default};

@@ -158,6 +158,12 @@ const __GLOBAL_SETTINGS__ = {
             title: '应急供电系统',
           },
         },
+        {
+          optionCode: 'single-page-cable-temperature-system',
+          meta: {
+            title: '电缆温度监测系统',
+          },
+        },
       ],
     },
     {
@@ -273,6 +279,13 @@ const __GLOBAL_SETTINGS__ = {
           optionCode: 'single-page-video-monitoring-system',
           meta: {
             title: '视频监控系统',
+          },
+        },
+        {
+          optionCode: 'single-page-ue-alarm-status-system',
+          meta: {
+            title: 'Ue天听声警报器',
+            fontSize: '18px',
           },
         },
       ],
