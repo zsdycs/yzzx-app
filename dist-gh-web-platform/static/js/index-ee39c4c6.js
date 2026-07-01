@@ -1,1 +1,0 @@
-import{av as n}from"./index-6ce65da3.js";const r="systemFunctionList",p="supportFunctionList",F=(t,o,s)=>{const c=t[o-1],i=t[o];if(!c||i[s]!==c[s]){let u=1;for(let e=o+1;e<t.length&&t[e][s]===i[s];e++)u++;return u}return 0},L=t=>n.setItem(r,t),g=()=>n.getItem(r),S=t=>n.setItem(p,t),y=()=>n.getItem(p);export{F as a,L as b,g as c,y as g,S as s};

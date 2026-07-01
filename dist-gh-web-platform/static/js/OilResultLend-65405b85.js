@@ -1,1 +1,0 @@
-import{n}from"./index-6ce65da3.js";const t={props:{ownclass:{type:String,default:""}}};var _=function(){var e=this,s=e._self._c;return s("div",{staticClass:"oilresbody-div",class:e.ownclass})},l=[],o=n(t,_,l,!1,null,"5c31f3be",null,null);const c=o.exports;export{c as default};

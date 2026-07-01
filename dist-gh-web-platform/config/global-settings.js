@@ -3,7 +3,7 @@ const __GLOBAL_SETTINGS__ = {
   entryPath: '/', // 入口地址
   homePagePath: '/home-page', // 首页地址
   singlePageHomePath: '/single-page/main', // 单屏首页
-  title: '研制中心厂务智能管理信息平台', // 核电厂智慧核应急指挥系统
+  title: '智科物联网平台', // 核电厂智慧核应急指挥系统
   titleDescribe: '',
   defaultThemes: 'dark', // 系统主题 默认：dark，dark-深色 light-浅色
   DrillName: '应急响应模式',
