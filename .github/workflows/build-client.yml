@@ -15,8 +15,8 @@ jobs:
     outputs:
       versioned_tag: ${{ steps.release_info.outputs.versioned_tag }}
       versioned_name: ${{ steps.release_info.outputs.versioned_name }}
-      latest_tag: latest-build
-      latest_name: latest-build
+      latest_tag: ${{ steps.release_info.outputs.latest_tag }}
+      latest_name: ${{ steps.release_info.outputs.latest_name }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -26,8 +26,16 @@ jobs:
         shell: bash
         run: |
           version="$(node -p "require('./package.json').version")"
-          echo "versioned_tag=v${version}-build.${GITHUB_RUN_NUMBER}" >> "$GITHUB_OUTPUT"
-          echo "versioned_name=v${version}-build.${GITHUB_RUN_NUMBER}" >> "$GITHUB_OUTPUT"
+          branch="${GITHUB_REF_NAME//\//-}"
+          echo "versioned_tag=v${version}-${branch}.build.${GITHUB_RUN_NUMBER}" >> "$GITHUB_OUTPUT"
+          echo "versioned_name=v${version} ${branch} build ${GITHUB_RUN_NUMBER}" >> "$GITHUB_OUTPUT"
+          if [ "$GITHUB_REF_NAME" = "master" ]; then
+            echo "latest_tag=latest-build" >> "$GITHUB_OUTPUT"
+            echo "latest_name=latest-build" >> "$GITHUB_OUTPUT"
+          else
+            echo "latest_tag=latest-build-${branch}" >> "$GITHUB_OUTPUT"
+            echo "latest_name=latest-build-${branch}" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Create versioned release
         uses: ncipollo/release-action@v1
@@ -35,6 +43,10 @@ jobs:
           tag: ${{ steps.release_info.outputs.versioned_tag }}
           name: ${{ steps.release_info.outputs.versioned_name }}
           commit: ${{ github.sha }}
+          body: |
+            Branch: ${{ github.ref_name }}
+            Commit: ${{ github.sha }}
+            Trigger: ${{ github.event_name }}
           allowUpdates: true
           generateReleaseNotes: true
           prerelease: true
@@ -42,10 +54,11 @@ jobs:
       - name: Create rolling latest release
         uses: ncipollo/release-action@v1
         with:
-          tag: latest-build
-          name: latest-build
+          tag: ${{ steps.release_info.outputs.latest_tag }}
+          name: ${{ steps.release_info.outputs.latest_name }}
           commit: ${{ github.sha }}
-          body: Latest auto build from ${{ github.sha }}
+          body: |
+            Latest auto build from ${{ github.ref_name }} @ ${{ github.sha }}
           allowUpdates: true
           prerelease: true
 
