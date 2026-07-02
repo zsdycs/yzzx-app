@@ -3,7 +3,7 @@ const __GLOBAL_SETTINGS__ = {
   entryPath: '/', // 入口地址
   homePagePath: '/home-page', // 首页地址
   singlePageHomePath: '/single-page/main', // 单屏首页
-  title: '智科物联网平台', // 核电厂智慧核应急指挥系统
+  title: '中广核研究院应急指挥中心', // 核电厂智慧核应急指挥系统
   titleDescribe: '',
   defaultThemes: 'dark', // 系统主题 默认：dark，dark-深色 light-浅色
   DrillName: '应急响应模式',
@@ -117,25 +117,25 @@ const __GLOBAL_SETTINGS__ = {
         {
           optionCode: 'single-page-laundry-system',
           meta: {
-            title: '洗衣系统',
+            title: '阳江热室',
           },
         },
         {
           optionCode: 'single-page-hvac-system',
           meta: {
-            title: '暖通系统',
+            title: '铅基快堆',
           },
         },
         {
           optionCode: 'single-page-water-supply-system',
           meta: {
-            title: '给水系统',
+            title: '中山园区',
           },
         },
         {
           optionCode: 'single-page-elevator-system',
           meta: {
-            title: '电梯系统',
+            title: '龙岗实验',
           },
         },
       ],
