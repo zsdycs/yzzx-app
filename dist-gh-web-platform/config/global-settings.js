@@ -168,7 +168,7 @@ const __GLOBAL_SETTINGS__ = {
     },
     {
       meta: {
-        title: '气体供应',
+        title: '气体监测',
         fontSize: '20px',
       },
       children: [

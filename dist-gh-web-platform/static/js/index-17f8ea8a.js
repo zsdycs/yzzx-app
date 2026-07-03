@@ -1,0 +1,1 @@
+import{n as t}from"./index-9d6cea03.js";const _={components:{},data(){return{}},mounted(){},computed:{},methods:{}};var s=function(){var n=this,e=n._self._c;return e("div",{staticClass:"page"},[e("DialogCard",{attrs:{title:"工作组应急流程",icon:"el-icon-s-claim"}},[e("div",[n._v("工作组应急流程")])])],1)},o=[],a=t(_,s,o,!1,null,"6641d152",null,null);const d=a.exports;export{d as default};
